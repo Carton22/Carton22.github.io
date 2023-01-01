@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/echarts.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+  <!-- 引入 vintage 主题 -->
+  <script src="js/essos.js"></script>
+  <title>Is raining threes worth it?</title>
+
+  <!-- Load Google Font -->
+  <!--<link href='https://fonts.googleapis.com/css?family=Roboto:100,400,300,400italic,700' rel='stylesheet' type='text/css'>-->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/leaflet.css">
+  <link rel="stylesheet" type="text/css" href="css/sequences.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+  <script>
+      $(function () {
+          $('#fullpage').fullpage({
+              anchors: ["cover","firstPage", 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'lastPage'],
+          });
+      });
+  </script>
+</head>
+
+<body style="width: 100%;background: #f4f1e6">
+
+<div class="main-container">
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="#cover" class="w3-bar-item w3-button"><b>3PointsBall</b></a>
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+        <a href="#firstPage" class="w3-bar-item w3-button">Pioneer</a>
+        <a href="#secondPage" class="w3-bar-item w3-button">Trend</a>
+        <a href="#thirdPage" class="w3-bar-item w3-button">3Pointer</a>
+        <a href="#fourthPage" class="w3-bar-item w3-button">Finals</a>
+        <a href="#fifthPage" class="w3-bar-item w3-button">Social Impact</a>
+        <a href="#sixthPage" class="w3-bar-item w3-button">Positions</a>
+        <a href="#seventhPage" class="w3-bar-item w3-button">Age</a>
+        <a href="#lastPage" class="w3-bar-item w3-button">About</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="fullpage">
+
+    <div class="section" id="cover_photo">
+      <div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <div id="cover-text">
+          <h1><b>Is raining threes worth it?</b></h1>
+          <h2 id="subtitle"><b><i>An exploration of 3-points ball at NBA.</i></b></h2>
+          <h2 id="story_begin">In the last years the NBA has changed dramatically.<br>
+            The playstyle is now more oriented toward early three point shot and fast offensive transitions.<br>
+            Many analyst have been wondering if this basketball revolution benefits to the show and helps the team to win the matches.
+          </h2>
+          <br><br><br><br><br><br><br><br>
+          <div style="text-align: center">
+            <p><i>Scroll to continue</i></p>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    
+    <!--Pioneer-->
+    <div class="section">
+      <div class="w3-container w3-padding-32" id="other_schools">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">To examine this further, let's explore the famous NBA basketball idol Stephen Curry first.</h3>
+      </div>
+
+      <div class="w3-row-padding row">
+        <h3>Stephen Curry , A three-pointer-kicking idol, a legendary figure</h3>
+        <h4 class="instruction">Click on the chart to see the 3-pointer ball shots data of Stephen Curry.</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="img/curry9.png" style="position:absolute;left:230px;top:40px;width:500px;height:900px;">
+            <img src="img/curry8.png" style="position:absolute;left:-10px;top:0px;width:500px;height:900px;">
+            <img src="img/curry7.png" style="position:absolute;left:-237px;top:5px;width:500px;height:900px;">
+          </div>
+          <div id="curry" style="position:relative;left:600px;top:30px;width:750px;height:500px;"></div>
+          <script src="js/curry.js"></script>  
+        </div>
+      </div>
+    </div>
+
+    <!--Trend-->
+    <div class="section w3-container w3-padding-32">
+      <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Let's take a closer look into the 3-pointer ball trend!</h3> 
+      <h4 class="instruction">In this river diagram, the upper block represents the 3P% data in the 1980-2016 game seasons.<br> While the lower block represents the 3PA data along all the same historical seasons.</h4>
+      <h5>3PA : 3-pointer balls attempted  3P% : the percentage of 3-pointer balls scored by those attempted<h5>
+      <img src="img/barkeley.png" style="position:absolute;left:935px;top:250px;width:450px;height:550px;">
+      <img src="img/11.png" style="position:absolute;left:935px;top:70px;width:500px;height:300px;">
+      <div id="trend3P" style="position:relative;left:-20px;top:0px;width:900px;height:600px;"></div>
+      <script src="js/trend3P.js"></script> 
+    </div>
+
+    <!--3Pointer-->
+    <div class="section">
+      <div class="w3-container w3-padding-32">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Can 3-pointer help team win?</h3>
+        <h4 class="instruction">Hover on the dots to see 3PA and 3P% of team wins and lose in the finals between 2003-2020 .</h4>
+      </div>
+      <div class="w3-row-padding row">
+
+      </div>
+
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <div class="w3-row-padding row">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="img/championship.png" style="position:absolute;left:0px;top:195px;width:500px;height:625px;">
+        <div id="3PA3PP" style="position:absolute;right:25px;top:220px;width: 930px;height: 600px;"></div>
+        <script src="js/3PA3PP.js"></script>
+      </div>
+    </div>
+
+    <!--Finals-->
+    <div class="section">
+      <div class="w3-container w3-padding-32" id="other_schools">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Let's take a look at 3-points ball in the NBA Finals.</h3>
+      </div>
+
+      <div class="w3-row-padding row">
+        <h2></h2> Players are always exposed to intense and fierce physical play in th NBA Finals. 3-points ball can help you go big or go home. 
+        <h3 class="instruction">Click on the table to see the change players shoot 3-points ball between 1980-2018.</h3>
+        <div class="row">
+          
+          <div class="col-md-6">
+          </div>
+          <div id="final" style="position:relative;left:20px;top:0px;width: 1300px;height: 500px;"></div>
+          <script src="js/final.js"></script>
+        </div>
+      </div>
+    </div>
+
+    <!--Social Impact-->
+    <div class="section">
+      <div class="w3-container w3-padding-32" id="nationwide">
+        <h3 class="section-title 3-border-bottom w3-border-light-grey w3-padding-16">Do the players who prefer to make three-pointers earn more?</h3>
+        <span class="material-symbols-outlined">
+          rocket_launch
+          </span>
+      </div>
+      <img src="img/stars.jpg" style="position:absolute;left:785px;top:180px;width:700px;height:700px;">
+      <div class="w3-row-padding row">
+      <h2></h2> We collect the 3-pointers data, salary, and their Twitter account views and praise of their players. Perhaps there is a relationship between these factors...?
+      <h3 class="instruction">Click on the dots to see relation between 3-pointers shooters and their social impact in the season 2016-2017.</h3>
+      </div>
+      <div id="socialimpact" style="position:relative;left:0px;top:-10px;width:800px;height:600px;"></div>
+      <script src="js/socialimpact.js"></script>   
+    </div>
+
+    <!--positions-->
+    <div class="section">
+      <div class="w3-container w3-padding-32" id="timeline_section">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">How players of five positions differ in 3-pointers shot?</h3>
+      </div>
+      <div class="w3-row-padding row">
+        <div id="timelineIntro">
+          <h4>Basketball is a team sport and players are generally divided into five positions to play different tactical roles on the court.</h4>
+          <h3 class="instruction">Hover on the table to see the position difference in 3P% and 3PAr between 1980-2017.</h3>
+          <br>
+          <br>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <img src="img/court.png" style="position:absolute;left:-50px;top:220px;width:740px;height:600px;">
+        </div>
+      </div>
+    </div>
+
+
+    <!--ages-->
+    <div class="section">
+      <div class="w3-container w3-padding-32" id="responses">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">Can three-pointers set off the same boom in different ages?
+          <em>Let's show it!</em>
+        </h3>
+      </div>
+      <h5 class="w3-row-padding row">Are you curious about the favours of 3-pointers balls among different ages players?<br>You can click on the four roses below to check and find the result!</h5>
+      <div id="rose" style="position:relative;left:0px;top:20px;width: 1400px;height:500px;"></div>
+      <script src="js/rose.js"></script>  
+      <div id="gdppart" style="position: absolute;left:635px;top:-580px;width: 800px;height: 600px;"></div>
+      <script src="js/part.js"></script>
+      
+    </div>
+
+
+    <!--about-->
+    <div class="section w3-container w3-padding-32 last-section">
+      <!--about-->
+      <div class="w3-container" id="about">
+        <h3 class="section-title w3-border-bottom w3-border-light-grey w3-padding-16">About this Project</h3>
+      </div>
+      <div class="w3-row w3-padding-32">
+        <div class="col-md-6">
+          <div class="w3-row">
+            <h4>Our Team</h4>
+            <div style="width: 80%; margin-left: 11%">
+              <div class="w3-third" style="text-align: center">
+                <img src="img/fcr.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%; border-radius: 100%;">
+                <h4>Ryan Fang</h4>
+                <h5>Ryan is a junior in ZJU concentrating in Crypto and computer technology.</h5>
+              </div>
+              <div class="w3-third" style="text-align: center">
+                <img src="img/tyf.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:80%; border-radius: 100%;">
+                <h4>Vann Tang</h4>
+                <h5>Vann is a junior in ZJU concentrating in Robotics and Contrl Science.</h5>
+              </div>
+              <div class="w3-third" style="text-align: center">
+                <img src="img/lxh.jpg" class="w3-round" alt="Random Name" style="width:80%; border-radius: 100%;">
+
+                <h4><br>Carton Liu</h4>
+                <h5>Carton is a junior in ZJU majored in Artifical Intelligence and Computer Science.</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="w3-row">
+            <h4>Notes</h4>
+            <h5>1. We would like to take special note to dig into the relation between the success of a NBA player and 3-pointer ball.
+              Motivated by the fantastic performance by Stephen Curry, all of us three and many other boys pay more attention to the 3-pointer balls 
+              when we play basketball. The power of a superidol is huge. As a result, We want to do some research, data analyst and visualization. </h5>
+            <h5>2. Our visualizations are based on publicly available data and information; any and all potential errors
+              reflect those of these online resources.</h5>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="w3-row">
+            <h4>References</h4>
+            <ol id="reference_list" style="font-size: 12px;">
+              <li>Data on shots taken during the <a href = "https://www.kaggle.com/datasets/dansbecker/nba-shot-logs">2014-2015 season</a>.</li>
+              <li>NBA 3 Point Percentages Through the Years :<a href="https://www.kaggle.com/code/akeemtlking/nba-3-point-percentages-through-the-years/data"> 1950-2017 season</a>.</li>
+              <li>Data about NBA on the court performance with Social Influence, Popularity and Power <a href="https://www.kaggle.com/datasets/noahgift/social-power-nba">Social Power NBA</a></li>
+              <li>NBA 16/17 Season Analysis : 
+                <a href="https://www.kaggle.com/code/ahmetburabua/nba-16-17-season-analysis/notebook">Data on 2016-2017 season</a>
+              </li>
+              <li>It's 
+                <a href= “https://faculty.harvard.edu/files/fdd/files/timeline-final_32.pdf” >raining threes </a>in NBA: is it worth it?
+              </li>
+              <li>Three pointers win championships: <a href= “https://www.kaggle.com/code/luziyu23/three-pointers-win-championships-eda-and-predicti/report” >EDA and predicti</a>.</li>
+              <li>NBA Finals Three Point Stats, <a href= “https://www.kaggle.com/code/daverosenman/nba-finals-three-point-stats-1980-2017” >1980-2017</a>.</li> 
+              <li>Datasets for the 2013 through 2021 seasons <a href= “https://www.kaggle.com/datasets/andrewsundberg/college-basketball-dataset” >College Basketball Dataset</a>.</li> 
+              <li><a href= “https://haixing-yin.github.io/visualization-final-project/” >W.O.W. Where are Our Women?</a></li> 
+            
+            </ol>
+          </div>
+
+          <h4>More on this project</h4>
+          <h5>This project is created as a final project for ZJU Data Visualization course. To learn more about this project,
+            take a look at our bilibili screencast below.</h5>
+            <iframe src="//player.bilibili.com/player.html?aid=686897644&bvid=BV15U4y1C7kH&cid=802529593&page=1" scrolling="no" border="20" frameborder="no" framespacing="20" allowfullscreen="true" style="position:absolute;left:150px;top:300px; width: 400px; height: 200px;"> </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Development -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+<!-- Production -->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<!-- Load JS libraries -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/d3.js"></script>
+<script src="js/d3-tip.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript">
+    // Hack to make this example display correctly in an iframe on bl.ocks.org
+    d3.select(self.frameElement).style("height", "700px");
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.0/d3-legend.js"></script>
+
+<!-- Visualization objects -->
+<script src="js/barChart.js"></script>
+<script type="text/javascript" src="js/sequences.js"></script>
+
+<!-- Load data, create visualizations -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
